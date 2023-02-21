@@ -1,2 +1,2 @@
 # homework
-My homework repo
+My homework repository

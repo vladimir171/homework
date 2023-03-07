@@ -1,0 +1,6 @@
+#!/bin/bash
+text="I love learning about DevOps"
+
+#zenity is included with ubunty and we can use it 
+#to display notifications on the screen
+zenity --notification --text="$text"

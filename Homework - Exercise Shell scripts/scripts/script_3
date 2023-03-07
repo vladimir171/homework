@@ -1,0 +1,5 @@
+#!/bin/bash
+
+text=$'plan\ncode\nbuild\ntest\nrelease\ndeploy'
+
+zenity --notification --text="$text"

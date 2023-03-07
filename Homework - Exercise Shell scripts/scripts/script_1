@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#put current date in $date in the following format
+date=$(date '+%Y-%m-%d %H:%M:%S')
+
+echo -e "The current date is $date\nThe current user is $USER\nThe current working directory is $PWD"
+
+#we can do echo "$USER" for the username but
+#login shells and sudo set $USER,
+#if you are running the script as a different user than root or ssh
+#it will outptut wrong user or nothing at all
+
+#whoami prints out the user attached to stdin
+whoami
+
+#$PWD prints the current working directory

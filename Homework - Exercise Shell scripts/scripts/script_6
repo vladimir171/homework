@@ -1,0 +1,10 @@
+#!/bin/bash
+
+name="Vlatko"
+
+echo $name
+
+uptime | sed 's/ .*up/The system has been up for/' | sed 's/,.*load/ with a system load/'
+
+#or just
+uptime -p

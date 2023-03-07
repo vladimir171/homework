@@ -1,0 +1,16 @@
+#!/bin/bash
+
+ls -l
+
+read -p "Please enter a filename: " filename
+
+if [[ -d "$filename" ]]
+    then
+        echo "$filename is a directory"
+elif [[ -f "$filename" ]]
+    then
+        echo "$filename is a file"
+else
+    echo "$filename is another type of file"
+    exit 1
+fi

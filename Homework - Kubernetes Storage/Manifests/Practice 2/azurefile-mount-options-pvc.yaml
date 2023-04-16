@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: azurefile
+spec:
+  accessModules:
+  - ReadWriteMany
+  storageClassName: ""
+  resources: 
+    requests:
+      storage: 5Gi
